@@ -1,5 +1,5 @@
+#include <assert.h>
 #include <iostream>
-#include<assert.h>
 using namespace std;
 
 unsigned __strlen(const char *arr) {
@@ -9,13 +9,11 @@ unsigned __strlen(const char *arr) {
   return temp - arr - 1;
 }
 
-char* __strcpy(char* des, const char* src)
-{
-	while((*des++ = *src++) != '\0')  
-		;  
-	return des;
+char *__strcpy(char *des, const char *src) {
+  while ((*des++ = *src++) != '\0')
+    ;
+  return des;
 }
-
 
 int main(int argc, char const *argv[]) {
   const char *arr = "123456";
