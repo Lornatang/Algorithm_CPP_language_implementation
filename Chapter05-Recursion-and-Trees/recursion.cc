@@ -44,7 +44,7 @@ void hannuo(int n, char one, char two, char three) {
     hannuo(n - 1, two, one, three);
   }
 }
-void move(char x, char y) { cout << x << "--->" << y << endl; }
+void move(char x, char y) { cout << x << "--->" << y << endl << endl; }
 
 int main() {
   hannuo(5, 'A', 'B', 'C');
